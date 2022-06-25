@@ -1,0 +1,217 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.5.0.min.js"
+        integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin="anonymous">
+        </script>
+    <script src="https://code.jquery.com/jquery-3.5.0.min.js"
+        integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin="anonymous"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</head>
+
+<body>
+    <main>
+        <div class="background">
+            <header>
+                <div class="fundos">
+                    <div class="perfil">
+                    <h1 class="nome1">Claudinei do Pantanal</h1>
+                    <hr>
+                    <div class="span">
+                        <div class="money">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"><path d="M21 4H3a1 1 0 0 0-1 1v14a1 1 0 0 0 1 1h18a1 1 0 0 0 1-1V5a1 1 0 0 0-1-1zm-1 11a3 3 0 0 0-3 3H7a3 3 0 0 0-3-3V9a3 3 0 0 0 3-3h10a3 3 0 0 0 3 3v6z"></path><path d="M12 8c-2.206 0-4 1.794-4 4s1.794 4 4 4 4-1.794 4-4-1.794-4-4-4zm0 6c-1.103 0-2-.897-2-2s.897-2 2-2 2 .897 2 2-.897 2-2 2z"></path></svg><span class="price">R$ 583,23</span>
+                        </div>
+                        <div class="card">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"><path d="M20 4H4c-1.103 0-2 .897-2 2v2h20V6c0-1.103-.897-2-2-2zM2 18c0 1.103.897 2 2 2h16c1.103 0 2-.897 2-2v-6H2v6zm3-3h6v2H5v-2z"></path></svg><span class="price">R$ 583,23</span>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                <input type="text" placeholder="Pesquisar">
+                <div class="buttons">
+                    <button class="loja">Comprar</button>
+                    <button class="saldo">Valor</button>
+                </div>
+            </header>
+           <div class="flex">
+            <div class="table">
+                <ul>
+                    <li onclick="todos()"><svg class="svg" xmlns="http://www.w3.org/2000/svg" width="24" height="24"><path d="M12.74 2.32a1 1 0 0 0-1.48 0l-9 10A1 1 0 0 0 3 14h2v7a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-7h2a1 1 0 0 0 1-1 1 1 0 0 0-.26-.68z"></path></svg>Todos</li>
+                    <li onclick="ele()"><svg class="svg" xmlns="http://www.w3.org/2000/svg" width="24" height="24"><path d="M19 2H5C3.346 2 2 3.346 2 5v2.831c0 1.053.382 2.01 1 2.746V20a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1v-5h4v5a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1v-9.424c.618-.735 1-1.692 1-2.746V5c0-1.654-1.346-3-3-3zm1 3v2.831c0 1.14-.849 2.112-1.891 2.167L18 10c-1.103 0-2-.897-2-2V4h3c.552 0 1 .449 1 1zM10 8V4h4v4c0 1.103-.897 2-2 2s-2-.897-2-2zM4 5c0-.551.448-1 1-1h3v4c0 1.103-.897 2-2 2l-.109-.003C4.849 9.943 4 8.971 4 7.831V5zm6 11H6v-3h4v3z"></path></svg>Eletronicos</li>
+                    <li onclick="roupa()"><svg class="svg" xmlns="http://www.w3.org/2000/svg" width="24" height="24"><path d="M12 2C6.579 2 2 6.579 2 12s4.579 10 10 10 10-4.579 10-10S17.421 2 12 2zm0 5c1.727 0 3 1.272 3 3s-1.273 3-3 3c-1.726 0-3-1.272-3-3s1.274-3 3-3zm-5.106 9.772c.897-1.32 2.393-2.2 4.106-2.2h2c1.714 0 3.209.88 4.106 2.2C15.828 18.14 14.015 19 12 19s-3.828-.86-5.106-2.228z"></path></svg>Vestimentas</li>
+                    <li onclick="bebida()"><svg class="svg" xmlns="http://www.w3.org/2000/svg" width="24" height="24"><path d="M20.832 4.555A1 1 0 0 0 20 3H4a1 1 0 0 0-.832 1.554L11 16.303V20H8v2h8v-2h-3v-3.697l7.832-11.748zm-2.7.445-2 3H7.868l-2-3h12.264z"></path></svg>Bebidas</li>
+                    <li onclick="ut()"><svg class="svg" xmlns="http://www.w3.org/2000/svg" width="24" height="24"><path d="M4 13h6a1 1 0 0 0 1-1V4a1 1 0 0 0-1-1H4a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1zm-1 7a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1v-4a1 1 0 0 0-1-1H4a1 1 0 0 0-1 1v4zm10 0a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1v-7a1 1 0 0 0-1-1h-6a1 1 0 0 0-1 1v7zm1-10h6a1 1 0 0 0 1-1V4a1 1 0 0 0-1-1h-6a1 1 0 0 0-1 1v5a1 1 0 0 0 1 1z"></path></svg>Utilitarios</li>
+                </ul>
+            </div>
+
+            <div class="conteudo">
+                <div class="itemsall">
+                    <div class="items">
+                        <h1>Celular: <b>R$: 1.000</b></h1>
+                        <img src="./assets/celular.png" alt="item">
+                        <div class="buttonscomprar">
+                            <button class="btncomprar">Comprar</button>
+                        </div>
+                    </div>
+
+                    <div class="items">
+                        <h1>Roupas: <b>R$: 1.000</b></h1>
+                        <img src="./assets/roupas.png" alt="item">
+                        <div class="buttonscomprar">
+                            <button class="btncomprar">Comprar</button>
+                        </div>
+                    </div>
+
+                    <div class="items">
+                        <h1>Mochila: <b>R$: 1.000</b></h1>
+                        <img src="./assets/mochila.png" alt="item">
+                        <div class="buttonscomprar">
+                            <button class="btncomprar">Comprar</button>
+                        </div>
+                    </div>
+
+                    <div class="items">
+                        <h1>Radio: <b>R$: 1.000</b></h1>
+                        <img src="./assets/radio.png" alt="item">
+                        <div class="buttonscomprar">
+                            <button class="btncomprar">Comprar</button>
+                        </div>
+                    </div>
+
+                    <div class="items">
+                        <h1>Kit de reparo: <b>R$: 1.000</b></h1>
+                        <img src="./assets/kit.png" alt="item">
+                        <div class="buttonscomprar">
+                            <button class="btncomprar">Comprar</button>
+                        </div>
+                    </div>
+
+                    <div class="items">
+                        <h1>Energetico: <b>R$: 1.000</b></h1>
+                        <img src="./assets/energetico.png" alt="item">
+                        <div class="buttonscomprar">
+                            <button class="btncomprar">Comprar</button>
+                        </div>
+                    </div>
+
+                    <div class="items">
+                        <h1>Pneu: <b>R$: 1.000</b></h1>
+                        <img src="./assets/pneu.png" alt="item">
+                        <div class="buttonscomprar">
+                            <button class="btncomprar">Comprar</button>
+                        </div>
+                    </div>
+
+                    <div class="items">
+                        <h1>Aliança: <b>R$: 1.000</b></h1>
+                        <img src="./assets/aliança.png" alt="item">
+                        <div class="buttonscomprar">
+                            <button class="btncomprar">Comprar</button>
+                        </div>
+                    </div>
+
+                    <div class="items">
+                        <h1>Secador: <b>R$: 1.000</b></h1>
+                        <img src="./assets/secador.png" alt="item">
+                        <div class="buttonscomprar">
+                            <button class="btncomprar">Comprar</button>
+                        </div>
+                    </div>
+
+                    <div class="items">
+                        <h1>Furadeira: <b>R$: 1.000</b></h1>
+                        <img src="./assets/furafura.png" alt="item">
+                        <div class="buttonscomprar">
+                            <button class="btncomprar">Comprar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="conteudo2" style="display: none;">
+                <div class="itemsall2">
+                    <div class="items">
+                        <h1>Celular: <b>R$: 1.000</b></h1>
+                        <img src="./assets/celular.png" alt="item">
+                        <div class="buttonscomprar">
+                            <button onclick="ele()" class="btncomprar">Comprar</button>
+                        </div>
+                    </div>
+
+                    <div class="items">
+                        <h1>Radio: <b>R$: 1.000</b></h1>
+                        <img src="./assets/radio.png" alt="item">
+                        <div class="buttonscomprar">
+                            <button class="btncomprar">Comprar</button>
+                        </div>
+                    </div>
+
+                    <div class="items">
+                        <h1>Furadeira: <b>R$: 1.000</b></h1>
+                        <img src="./assets/furafura.png" alt="item">
+                        <div class="buttonscomprar">
+                            <button class="btncomprar">Comprar</button>
+                        </div>
+                    </div>
+
+                    <div class="items">
+                        <h1>Secador: <b>R$: 1.000</b></h1>
+                        <img src="./assets/secador.png" alt="item">
+                        <div class="buttonscomprar">
+                            <button class="btncomprar">Comprar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="conteudo5" style="display: none;">
+                <div class="itemsall5">
+                    <div class="items">
+                        <h1>KIT DE REPARO: <b>R$: 1.000</b></h1>
+                        <img src="./assets/kit.png" alt="item">
+                        <div class="buttonscomprar">
+                            <button onclick="ele()" class="btncomprar">Comprar</button>
+                        </div>
+                    </div>
+
+                    <div class="items">
+                        <h1>Mochila: <b>R$: 1.000</b></h1>
+                        <img src="./assets/mochila.png" alt="item">
+                        <div class="buttonscomprar">
+                            <button class="btncomprar">Comprar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="conteudo3" style="display: none;">
+                <div class="itemsall3">
+                    <div class="items">
+                        <h1>Roupas: <b>R$: 1.000</b></h1>
+                        <img src="./assets/roupas.png" alt="item">
+                        <div class="buttonscomprar">
+                            <button class="btncomprar">Comprar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="conteudo4" style="display: none;">
+                <div class="itemsall4">
+                    <div class="items">
+                        <h1>Energetico: <b>R$: 1.000</b></h1>
+                        <img src="./assets/energetico.png" alt="item">
+                        <div class="buttonscomprar">
+                            <button onclick="ele()" class="btncomprar">Comprar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+           </div>
+        </div>
+    </main>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="./script.js"></script>
+</body>
+
+</html>
