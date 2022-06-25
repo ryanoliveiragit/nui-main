@@ -1,3 +1,5 @@
+console.log("javascript iniciado com sucesso")
+console.log('Dev babu#2163 e Rael couldnt#1316')
 function ele() {
     $(".itemsall").hide()
     $(".itemsall2").show()
